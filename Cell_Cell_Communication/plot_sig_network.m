@@ -65,6 +65,6 @@ if max(adjacentM(:)) > 0
     fig.PaperSize = [fig_pos(3) fig_pos(4)];
     fig.Units = 'Inches';
     fig.Position = [0 0 6 4];
-    print(['Results\' folder '\' figname],'-dpdf','-r300');
+    %print([ folder '\' figname],'-dpdf','-r300');
 end
 

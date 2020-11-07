@@ -116,7 +116,7 @@ ax.TickDir = 'out';
 ax.LineWidth = 1;
 % box off;
 % box on;
-grid on;
+%grid on;
 
 % cb = colorbar('Ticks',tickval,'TickLabels',lgd,'FontSize',12);
 cb = colorbar;
@@ -133,8 +133,4 @@ fig_pos = fig.PaperPosition;
 fig.PaperSize = [fig_pos(3) fig_pos(4)];
 fig.Units = 'Inches';
 fig.Position = [0 0 10 8]; 
-% print([folder '\Dot_heatmap__' figname],'-dpdf','-r300');%,'-fillpage','-dpsc'
-% print([folder '\Dot_heatmap__' figname],'-dsvg','-r300');%,'-fillpage','-dpsc','-dsvg'
-
-print([folder '\' figname],'-depsc','-r300');
-
+%print([ folder '\' figname],'-dpdf','-r300');

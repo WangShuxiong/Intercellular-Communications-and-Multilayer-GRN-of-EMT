@@ -30,3 +30,16 @@ target_down = intersect(allgenes,target_down,'stable');
 %compute cell-cell & cluster_cluster interactions
 [P_cell_each_lr,P_cell_agg,P_cluster_each_lr,P_cluster_agg] = ...
     LR_Interaction(data_raw_log',allgenes,cell_clustering_index,Lig,Rec,target_up,target_down);
+
+%% plot aggegration of cluster-cluster interations (aggegration of all l-r pair)
+figname = 'Cluster-cluster-interaction-agg';
+threshold = 0;
+cluster_id = 1:No_cluster;
+folder='Plot';
+plot_sig_network(P_cluster_agg,cluster_id,threshold,cluster_label,folder,figname,mycolor1);
+
+%% plot heatmap of each L-R pairs
+cluster_lab_lr = ones(size(Lig,1),1);
+P_dot_size = dot_size_LR(data_raw_log',Lig,Rec,allgenes,cell_clustering_index);
+plot_dot_heatmap(P_cluster_each_lr,P_dot_size,Lig,Rec,cluster_label',...
+    mycolor1,color_map,cluster_id,cluster_lab_lr,1,folder,'Dot_heatmap');

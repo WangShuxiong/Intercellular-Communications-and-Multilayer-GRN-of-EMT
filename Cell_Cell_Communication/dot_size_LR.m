@@ -15,7 +15,7 @@ for i = 1:No_LR
             P0(j,k) = nnz(L_data(find(cluster_labelr==j)))*nnz(R_data(find(cluster_labelr==k)));
         end
     end
-    P0 = log2(P0+1);
+    %P0 = log2(P0+1);
     P{i} = P0;
 end
 
