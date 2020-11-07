@@ -3,7 +3,7 @@
 %load SCC datasets with gene-gene correlations computed by PIDC
 addpath('data');
 load('SCC_multi_GRN.mat')
-%Input: P_cluster_agg (cluster-clustet signaling probabilities)
+%Input: P_cluster_agg (cluster-cluster signaling probabilities)
 %       No_cluster (# cluster)
 %       target_genes (index of target genes)
 %       target_up_index (index of up-regulated target genes)
