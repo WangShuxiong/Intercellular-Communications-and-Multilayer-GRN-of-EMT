@@ -6,6 +6,6 @@ Usage: For matlab codes, download the source codes and unzip the MATLAB package.
 
 1) [QuanTC](https://github.com/yutongo/QuanTC/blob/master/Example/QuanTC_SCC.pdf): clustering and transition trajectory reconstruction. 
 2) [PIDC](https://github.com/Tchanders/network_inference_tutorials): using partial information decomposition to identify GRN 
-3) SoptSC: qualitatively characterizing cell-cell communications [code](https://github.com/yutongo/Intercellular-Communications-and-Multilayer-GRN-of-EMT/blob/main/apply_SoptSC.m)
+3) [SoptSC](https://github.com/WangShuxiong/SoptSC): qualitatively characterizing cell-cell communications [code](https://github.com/yutongo/Intercellular-Communications-and-Multilayer-GRN-of-EMT/blob/main/apply_SoptSC.m)
 4) Multilayer regulations of EMT [code](https://github.com/yutongo/Intercellular-Communications-and-Multilayer-GRN-of-EMT/blob/main/plot_multilayer_GRN.m)
 5) [igraph](https://igraph.org/r/doc/closeness.html): measuring node centrality [code](https://github.com/yutongo/Intercellular-Communications-and-Multilayer-GRN-of-EMT/blob/main/apply_igraph.R)
